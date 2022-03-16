@@ -3,16 +3,12 @@
 <head> <!-- Техническая информация о документе -->
 <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
 <title>Ooops</title> <!-- Задаем заголовок документа -->
-<script src="jquery-3.6.0.js"></script>
-<script src="sk.js"></script>
+<script src="scripts/main.js"></script>
 </head>
 <body> <!-- Основная часть документа -->
-<h3>let / objects</h3>
-<span>Имя: </span><input type="text" id="name" value="Данила"><br>
-<span>Фамилия:</span><input type="text" id="surname" value="Алферов"><br>
-<button onclick='load_from_remote()'>Загрузить</button>
-<button id= "m_iBack" onclick="back()" disabled>Пред</button>
-<button id= "m_iNext" onclick="next()">След</button>
-<button onclick="get_all_to_console()">Вывести всех в консоль</button>
+<h3>Генерация масива V2</h3>
+<input id='__i' type='text'>
+<button onclick="calc()">Запустить скрипт</button>
+<h4 id="result"></h4>
 </body>
 </html>
