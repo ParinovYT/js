@@ -1,10 +1,25 @@
 function draw_fill() {
 	let _canvas = document.getElementById('g_render')
 	let ctx = _canvas.getContext('2d')
-	ctx.strokeStyle = "green"; //цвет обводки
-	ctx.lineWidth = "10"; //толщина обводки
-	ctx.rect(10, 10, 380, 380); //args: x,y,w,h
-	ctx.stroke();
-	ctx.fillStyle = "black"; //цвет заливки
-	ctx.fill();  
+	
+	let i = 5
+	let y = (105*3)+80
+	
+	ctx.beginPath();
+	ctx.fillStyle = "red";
+    ctx.moveTo(i,i);
+    ctx.lineTo(y,i);
+    ctx.lineTo(i,y);
+    ctx.fill(); 
+	
+	
+	ctx.beginPath();
+	ctx.fillStyle = "green";
+    ctx.moveTo(y,y);
+    ctx.lineTo(i,y);
+    ctx.lineTo(y,i);
+    ctx.fill(); 
+	
+	
+//380, 380
 }
