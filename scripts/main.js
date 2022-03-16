@@ -5,9 +5,14 @@ function draw_line() {
 	ctx.beginPath();
 	ctx.strokeStyle = "red";
 	ctx.lineWidth = "5";
-	ctx.moveTo(10,10);
-	ctx.lineTo(380,10);
-	ctx.lineTo(380,380);
+	ctx.moveTo(100,150);
+	ctx.lineTo(200,200);
 	ctx.stroke();
 
+	ctx.beginPath();
+	ctx.strokeStyle = "green";
+	ctx.lineWidth = "5";
+	ctx.moveTo(200,50);
+	ctx.lineTo(150,150);
+	ctx.stroke(); 
 }
