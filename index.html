@@ -1,13 +1,15 @@
-<!DOCTYPE html> <!-- Объявление формата документа -->
-<html>
-<head> <!-- Техническая информация о документе -->
-<meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
-<title>Ooops</title> <!-- Задаем заголовок документа -->
-<script src="scripts/main.js"></script>
-<link href="css/style.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Flappy Bird!</title>
 </head>
-<body onload='start_anim()'> <!-- Основная часть документа -->
-<h3>canvas render</h3>
-<canvas id="g_render" width="400px" height="400px"></canvas>
+<body>
+
+ <canvas id="canvas" width="288" height="512"></canvas>
+
+ <script src="flappy.js"></script>
 </body>
 </html>
