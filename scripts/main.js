@@ -1,18 +1,16 @@
-function draw_line() {
-	let _canvas = document.getElementById('g_render')
-	let ctx = _canvas.getContext('2d')
-
-	let x = 300
-	let y = 80
-	let z = 70
-
+function draw_arc() 
+{
+	var canvas=document.getElementById('g_render');
+	var ctx = canvas.getContext('2d');
+	
 	ctx.beginPath();
-	ctx.strokeStyle = "red";
-	ctx.lineWidth = "10";
-	ctx.moveTo(z,x);
-	ctx.lineTo(x,50);
-	ctx.lineCap = "round";
-	ctx.lineTo(400,x);
-	ctx.lineTo(y,x);
-	ctx.stroke(); 
+	ctx.lineWidth = 5; 
+	ctx.arc(200,200,100,0, Math.PI,true);
+	ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.lineWidth = 5; 
+	ctx.arc(200,200 + 10,100,0, Math.PI,false);
+	ctx.stroke();
+	
 }
