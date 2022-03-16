@@ -1,25 +1,8 @@
-function draw_fill() {
+function draw_circle() {
 	let _canvas = document.getElementById('g_render')
 	let ctx = _canvas.getContext('2d')
-	
-	let i = 5
-	let y = (105*3)+80
-	
-	ctx.beginPath();
-	ctx.fillStyle = "red";
-    ctx.moveTo(i,i);
-    ctx.lineTo(y,i);
-    ctx.lineTo(i,y);
-    ctx.fill(); 
-	
-	
-	ctx.beginPath();
-	ctx.fillStyle = "green";
-    ctx.moveTo(y,y);
-    ctx.lineTo(i,y);
-    ctx.lineTo(y,i);
-    ctx.fill(); 
-	
-	
-//380, 380
+	ctx.lineWidth = 5; 
+	ctx.strokeStyle = "red";
+	ctx.arc(400/2,400/2,190,0, 2*Math.PI,true);
+	ctx.stroke();
 }
