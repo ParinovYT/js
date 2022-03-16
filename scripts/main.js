@@ -2,10 +2,11 @@ function draw_line() {
 	let _canvas = document.getElementById('g_render')
 	let ctx = _canvas.getContext('2d')
 
-	ctx.moveTo(400,0);
-	ctx.lineTo(0,400);
-	ctx.strokeStyle = "green"; 
-	ctx.lineWidth = "5"; 
-	ctx.lineTo(888,0);
-	ctx.stroke();  	
+	ctx.beginPath();
+	ctx.strokeStyle = "red";
+	ctx.lineCap = "round";
+	ctx.lineWidth = "50";
+	ctx.moveTo(350,50);
+	ctx.lineTo(50,350);
+	ctx.stroke();   
 }
