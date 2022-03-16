@@ -1,17 +1,18 @@
-function draw_filled_circle() 
+function start_anim()
 {
-	var canvas=document.getElementById('g_render');
-	var ctx = canvas.getContext('2d');
-	
-	ctx.beginPath();
-	ctx.fillStyle="red";
-	ctx.moveTo(75, 40);
-	ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
-	ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
-	ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
-	ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
-	ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
-	ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
-	ctx.fill();    
-	
+var canvas=document.getElementById('g_render');
+var ctx = canvas.getContext('2d');
+
+let pox_X = 75; 
+setInterval(function() {
+    ctx.beginPath();
+    ctx.clearRect(0,0,400,400); 
+    ctx.fillStyle = "green"; 
+    ctx.rect(pox_X, 50, 50, 50);
+    ctx.fill();
+    pox_X++;
+    if(pox_X > 600) {
+        pox_X = 50;
+    }
+},1); 
 }
