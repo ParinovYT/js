@@ -4,11 +4,17 @@ function draw_filled_circle()
 	var ctx = canvas.getContext('2d');
 	
 	ctx.beginPath();
-	ctx.lineWidth = 15;
-	ctx.strokeStyle = "orange";
-	ctx.fillStyle="blue";
-	ctx.arc(200, 200, 90, 0, 2*Math.PI, false);
-	ctx.stroke();
-	ctx.fill(); 
+	ctx.lineWidth = 5; 
+	ctx.strokeStyle="green"; 
+	ctx.moveTo(75, 150); 
+	ctx.quadraticCurveTo(150, 0, 300, 150); 
+	ctx.stroke(); 
+	
+	ctx.beginPath(); 
+	ctx.lineWidth = 7; 
+	ctx.strokeStyle="red"; 
+	ctx.moveTo(75, 75); 
+	ctx.quadraticCurveTo(100, 150, 300, 50); 
+	ctx.stroke(); 
 	
 }
